@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Utilizando variáveis</title>
+
+    <script>
+        var agesum = 0;
+        var oldest = 0;
+        var youngest = 0;
+        var rated0 = 0;
+        var goodAndGreatPercentage = 0;
+        var man = 0;
+        var woman = 0;
+
+        for(i=1; i<=45; i++){
+            var age = prompt("Digite sua idade");
+            var sex = prompt("Digite seu sexo (homem ou mulher)");
+            var opinion = prompt("Qual nota você dá para o filme entre 1 e 4");
+            agesum += age;
+            if(oldest<age){
+                oldest = age;
+            }
+            if(youngest>age){
+                youngest = age;
+            }
+            if(opinion == 0){
+                rated0++;
+            }
+            if(sex == "homem"){
+                man++;
+            }
+            if(sex == "mulher"){
+                woman++;
+            }
+        }
+    </script>
+</head>
+
+
+<body>
+</body>
+
+</html>
